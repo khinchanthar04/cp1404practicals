@@ -2,7 +2,10 @@ MENU = """(G)et a valid score
 (P)rint the result
 (S)how stars
 (Q)uit"""
-
+HIGHEST_SCORE = 100
+LOWEST_SCORE = 0
+PASSING_SCORE = 50
+DISTINCTION = 90
 
 def main():
     """Main function to display menu and process user input."""
@@ -34,7 +37,7 @@ def main():
 def get_valid_score():
     """Get valid score from the user between 0 and 100 (inclusive)."""
     score = float(input("Enter score: "))
-    while score < 0 or score > 100:
+    while score < LOWEST_SCORE or score > HIGHEST_SCORE:
         print("Invalid score please enter again!")
         score = float(input("Enter score: "))
     return score
@@ -42,9 +45,9 @@ def get_valid_score():
 
 def determine_result(score):
     """Determine the result based on the given score."""
-    if score >= 90:
+    if score >= DISTINCTION:
         return "Excellent"
-    elif score >= 50:
+    elif score >= PASSING_SCORE:
         return "Passable"
     else:
         return "Bad"
