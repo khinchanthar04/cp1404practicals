@@ -1,12 +1,13 @@
 import random
 
+
 def main():
     """Get user score and random score then display result for both."""
     score = float(input("Enter score: "))
     result = determine_result(score)
     print(result)
 
-    random_score = random.randint(0,100)
+    random_score = random.randint(0, 100)
     print(f"Random score : {random_score}")
     random_result = determine_result(random_score)
     print(random_result)
