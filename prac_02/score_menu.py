@@ -5,6 +5,7 @@ MENU = """(G)et a valid score
 
 
 def main():
+    """Main function to display menu and process user input."""
     score = ""
     print(MENU)
     choice = input(">>> ").upper()
@@ -27,9 +28,11 @@ def main():
             print("Invalid Choice!")
         print(MENU)
         choice = input(">>> ").upper()
+    print("Have a nice day!")
 
 
 def get_valid_score():
+    """Get valid score from the user between 0 and 100 (inclusive)."""
     score = float(input("Enter score: "))
     while score < 0 or score > 100:
         print("Invalid score please enter again!")
@@ -38,6 +41,7 @@ def get_valid_score():
 
 
 def determine_result(score):
+    """Determine the result based on the given score."""
     if score >= 90:
         return "Excellent"
     elif score >= 50:
