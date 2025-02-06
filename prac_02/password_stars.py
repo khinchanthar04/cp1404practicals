@@ -19,6 +19,5 @@ def get_password():
         user_password = len(input("Enter your password: "))
     return user_password
 
-
 main()
 
