@@ -12,7 +12,7 @@ def print_asterisks(user_password):
 
 
 def get_password():
-    """Get password meeting the required characters in PASSWORD_LENGTH."""
+    """Get password meeting the required characters in password length."""
     user_password = len(input("Enter your password: "))
     while user_password <= PASSWORD_LENGTH:
         print("Invalid Password")
