@@ -56,3 +56,4 @@ def print_asterisks(score):
 
 
 main()
+
