@@ -41,6 +41,7 @@ for i in range(11):
     print(f"2 ^ {i:2} is {2 ** i:4}")
 
 # produce the following right-aligned output (DO NOT use a list):
+
 # 2 ^ 0 is    1
 # 2 ^ 1 is    2
 # 2 ^ 2 is    4
