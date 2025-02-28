@@ -13,12 +13,13 @@ COLOUR_CODES = {"aliceblue": "#f0f8ff",
                 "mindaro": "#e3f988"}
 
 
-colour_name = input("Enter a colour name: ")
+colour_name = input("Enter a colour name: ").lower()
 
 while colour_name != "":
     hex_code = COLOUR_CODES.get(colour_name)
     if hex_code:
         print(f"The code for \"{colour_name}\" is {COLOUR_CODES.get(colour_name)}")
     print("Invalid colour, please try again.")
-    colour_name = input("Enter a colour name: ")
+    colour_name = input("Enter a colour name: ").lower()
 
+print("Goodbye!")
