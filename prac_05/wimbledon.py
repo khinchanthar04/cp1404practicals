@@ -1,5 +1,5 @@
 """
-CP1404 Practical-5
+CP1404 Practical 5
 Wimbledon displaying, processing and data-reading
 """
 

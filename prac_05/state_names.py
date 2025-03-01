@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical-5
+CP1404/CP5632 Practical 5
 State names in a dictionary
 File has been reformatted and state inputs can be any case.
 """
