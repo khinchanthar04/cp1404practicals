@@ -1,6 +1,6 @@
 """
 CP1404 Practical 5
-Email to name dictionary
+Email to name dictionary program
 """
 
 

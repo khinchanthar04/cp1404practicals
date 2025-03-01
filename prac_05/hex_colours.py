@@ -1,6 +1,6 @@
 """
 CP1404 Practical 5
-Hexadecimal colour lookup
+Hexadecimal colour lookup program
 """
 
 COLOUR_CODES = {"aliceblue": "#f0f8ff",
