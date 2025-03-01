@@ -30,4 +30,3 @@ sorted_countries = sorted(countries)
 countries_string = ", ".join(sorted_countries)
 print(f"\nThese {len(countries)} countries have won Wimbledon: ")
 print(countries_string)
-
