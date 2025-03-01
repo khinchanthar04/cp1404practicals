@@ -1,7 +1,7 @@
 """
-CP1404/CP5632 Practical
+CP1404/CP5632 Practical 5
 State names in a dictionary
-File has been reformatted and state inputs can be any case
+File has been reformatted and state inputs can be any case.
 """
 
 CODE_TO_NAME = {"QLD": "Queensland",
