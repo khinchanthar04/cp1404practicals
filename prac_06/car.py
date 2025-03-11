@@ -19,7 +19,7 @@ class Car:
 
     def __str__(self):
         """Return a string for a Car object."""
-        return f"{self.name}, fuel = {self.fuel}, odometer = {self._odometer}"
+        return f"{self.name}, fuel={self.fuel}, odometer={self._odometer}"
 
     def drive(self, distance):
         """Drive the car a given distance.
