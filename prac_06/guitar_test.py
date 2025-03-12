@@ -5,6 +5,7 @@ CP1404 Practical - 6
 
 from guitar import Guitar
 
+
 def run_test():
     """Tests for Guitar Class."""
     name = "Gibson L-5 CES"

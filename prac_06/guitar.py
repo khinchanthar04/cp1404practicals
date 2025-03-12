@@ -1,6 +1,7 @@
 """
 CP1404 Practical - 6
 Guitar class
+
 """
 
 
