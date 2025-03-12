@@ -3,6 +3,7 @@ CP1404 Practical - 6
 Guitar class
 """
 
+
 class Guitar:
     """Represents a guitar with a name, year of manufacture, and cost."""
     def __init__(self, name, year, cost):
@@ -13,7 +14,7 @@ class Guitar:
 
     def get_age(self):
         """Return the age of the guitar based on the current year."""
-        return 2022 - self.year  # Change to current year if needed
+        return 2022 - self.year
 
     def is_vintage(self):
         """Determine if a guitar is considered vintage or not based on age."""
