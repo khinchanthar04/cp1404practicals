@@ -1,6 +1,5 @@
 """
 CP1404/CP5632 Practical - Client code to use the Car class.
-
 """
 
 from prac_06.car import Car

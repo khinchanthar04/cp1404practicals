@@ -1,6 +1,5 @@
 """
 CP1404 Practical - 6
-
 """
 
 from guitar import Guitar

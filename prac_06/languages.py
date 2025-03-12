@@ -1,7 +1,6 @@
 """
 CP1404 Practical 6
 Programming Language client code.
-
 """
 
 from prac_06.programming_language import ProgrammingLanguage

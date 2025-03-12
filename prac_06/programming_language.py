@@ -1,7 +1,6 @@
 """
 CP1404 Practical - 6
 Programming Language class with tests.
-
 """
 
 

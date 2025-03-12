@@ -1,7 +1,6 @@
 """
 CP1404 Practical - 6
 Guitar Program
-
 """
 from prac_06.guitar import Guitar
 
