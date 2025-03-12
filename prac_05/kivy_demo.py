@@ -5,7 +5,7 @@ from kivy.uix.button import Button
 
 
 class KivyDemo(App):
-    """Kivy program to demo some basic interactive functionality."""
+    """Kivy program to demo some basic interactive functionality. """
     status_text = StringProperty("Hello. Click the buttons :)")
 
     def __init__(self, **kwargs):

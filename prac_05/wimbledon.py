@@ -9,7 +9,7 @@ INDEX_CHAMPION = 2
 
 
 def main():
-    """Read the data file and print the processed data about Wimbledon champions and countries."""
+    """Read the data file and print the processed data on Wimbledon champions and countries."""
     data = load_data(FILENAME)
     champion_counts, countries = process_data(data)
     display_results(champion_counts, countries)
