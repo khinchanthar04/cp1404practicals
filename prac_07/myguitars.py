@@ -8,12 +8,18 @@ from prac_07.guitar import Guitar
 def main():
     """Guitar program, using Guitar class."""
     guitars = load_guitars()
-    display_guitars(guitars)
-
 
     print("My guitars!")
-    name = input("Name: ")
+    add_new_guitars(guitars)
 
+    guitars.sort()
+    print("\n Guitars sorted by year: ")
+    display_guitars(guitars)
+    save_guitars(guitars)
+
+def add_new_guitars(guitars):
+    """Load guitars from the CSV file."""
+    name = input("Enter a new guitar name or blank to stop: ")
     while name != "":
         year = int(input("Year: "))
         cost = float(input("Cost: $"))
@@ -21,19 +27,6 @@ def main():
         print(f"{name} ({year}) : ${cost:.2f} added.")
         name = input("Name: ")
 
-    guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
-    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
-
-    if guitars:
-        print("These are my guitars:")
-        for i, guitar in enumerate(guitars, 1):
-            vintage_string = ""
-            if guitar.is_vintage():
-                vintage_string = " (vintage)"
-
-            print(f"Guitar {i}: {guitar.name} ({guitar.year}), worth ${guitar.cost:.2f}{vintage_string}")
-    else:
-        print("No guitars :( Quick, go and buy one!")
 
 def load_guitars():
     """Load guitars from the CSV file."""
@@ -50,5 +43,10 @@ def display_guitars(guitars):
         print(f"Guitar {i}: {guitar.name:>20} ({guitar.year}), "
               f"worth ${guitar.cost:10,.2f}")
 
+def save_guitars(guitars):
+    """Save guitars to the CSV file."""
+    with open("guitars.csv", "w", newline="") as file:
+        for guitar in guitars:
+            file.write(f"{guitar}\n")
 
 main()
