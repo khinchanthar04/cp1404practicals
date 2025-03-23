@@ -1,7 +1,7 @@
 """
 CP1404 Practical - 7
 Estimated time : 2 hours
-Actual time:
+Actual time: 1.5 hours
 Project
 """
 import datetime
