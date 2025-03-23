@@ -13,10 +13,10 @@ class Project:
     def __init__(self,name,start_date,priority, cost_estimate, completion_percentage):
         """Initialize a project object with given attributes."""
         self.name = name
-        self.start_date = datetime.datetime.strptime(start_date, "%d/%m/%Y").date()
-        self.priority = int(priority)
-        self.cost_estimate = float(cost_estimate)
-        self.completion_percentage = int(completion_percentage)
+        self.start_date = start_date
+        self.priority = priority
+        self.cost_estimate = cost_estimate
+        self.completion_percentage = completion_percentage
 
     def __str__(self):
         """Return a string representation of the project."""
