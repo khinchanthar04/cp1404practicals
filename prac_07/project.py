@@ -27,7 +27,7 @@ class Project:
         """Define less than operator for sorting by priority."""
         return self.priority < other.priority
 
-    def is_completed (self):
+    def is_complete (self):
         """Check if the project is completed."""
         return self.completion_percentage == 100
 
