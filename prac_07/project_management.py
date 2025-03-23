@@ -40,7 +40,7 @@ def main():
         elif choice == "A":
             add_project(projects)
         elif choice == "U":
-            print("Update project")
+            update_project(projects)
         else:
             print("Invalid menu choice")
         print(MENU)
@@ -97,3 +97,15 @@ def add_project(projects):
     projects.append(Project(name,start_date.strftime("%d/%m/%Y"), priority, cost_estimate, completion_percentage))
 
 
+def update_project(projects):
+    """Update an existing project."""
+    for i, project in enumerate(projects):
+        print(f"{i} {project}")
+        project_index = int(input("Project choice: "))
+        project = projects[project_index]
+        new_completion_percentage = input("New Percentage (leave blank to keep current): ")
+    new_priority = input("New Priority (leave blank to keep current): ")
+    project.update(int(new_completion_percentage) if new_completion_percentage else None, int(new_priority) if new_priority else None)
+
+
+main()
