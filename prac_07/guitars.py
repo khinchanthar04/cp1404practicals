@@ -1,13 +1,13 @@
 """
-CP1404 Practical - 6
+CP1404 Practical - 7
 Guitar Program
 """
-from prac_06.guitar import Guitar
+from prac_07.guitar import Guitar
 
 
 def main():
     """Guitar program, using Guitar class."""
-    guitars = []
+    guitars = load_guitars()
 
     print("My guitars!")
     name = input("Name: ")
@@ -32,6 +32,15 @@ def main():
             print(f"Guitar {i}: {guitar.name} ({guitar.year}), worth ${guitar.cost:.2f}{vintage_string}")
     else:
         print("No guitars :( Quick, go and buy one!")
+
+def load_guitars():
+    """Load guitars from the CSV file."""
+    guitars = []
+    with open("guitars.csv", "r") as file:
+        for line in file:
+            name, year, cost = line.strip().split(',')
+            guitars.append(Guitar(name,int(year),float(cost)))
+    return guitars
 
 
 main()
