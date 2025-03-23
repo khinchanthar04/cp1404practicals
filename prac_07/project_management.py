@@ -41,20 +41,17 @@ def main():
             add_project(projects)
         elif choice == "U":
             update_project(projects)
-        elif choice == "Q":
-            save_choice = input(f"Would you like to save to {FILENAME}? ").strip().lower()
-            if save_choice in ["yes", "y"]:
-                save_projects(FILENAME, projects)
-                print(f"Projects saved to {FILENAME}.")
-            else:
-                print("No changes were saved.")
-            print("Thank you for using custom-built project management software.")
-            break
         else:
             print("Invalid menu choice")
         print(MENU)
         choice = input(">>> ").upper()
-
+    save_choice = input(f"Would you like to save to {FILENAME}? ").strip().lower()
+    if save_choice in ["yes", "y"]:
+        save_projects(FILENAME, projects)
+        print(f"Projects saved to {FILENAME}.")
+    else:
+        print("No changes were saved.")
+    print("Thank you for using custom-built project management software.")
 
 def load_projects(filename):
     """Load projects from the txt file and return a list of project objects."""
