@@ -8,6 +8,8 @@ from prac_07.guitar import Guitar
 def main():
     """Guitar program, using Guitar class."""
     guitars = load_guitars()
+    display_guitars(guitars)
+
 
     print("My guitars!")
     name = input("Name: ")
@@ -41,6 +43,12 @@ def load_guitars():
             name, year, cost = line.strip().split(',')
             guitars.append(Guitar(name,int(year),float(cost)))
     return guitars
+
+def display_guitars(guitars):
+    """Display the list of guitars."""
+    for i, guitar in enumerate(guitars, 1):
+        print(f"Guitar {i}: {guitar.name:>20} ({guitar.year}), "
+              f"worth ${guitar.cost:10,.2f}")
 
 
 main()
