@@ -12,7 +12,6 @@ My name is Khin Chan Thar, and I am currently studying Bachelor of Science(Data 
 - **Meaningful Names**: Use descriptive names for variables, functions, and classes to make the code self-explanatory.
 
 ## Useful Links
-- [Programming Patterns Page](https://github.com/CP1404/ProgrammingPatterns)
-- [CP1404 Practicals Instructions](https://github.com/CP1404/Practicals)
+- [CP1404 Practicals Instructions](https://github.com/CP1404/Practicals/tree/master)
 
 Practical work for IT@JCU CP1404
