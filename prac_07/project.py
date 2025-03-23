@@ -27,6 +27,10 @@ class Project:
         """Define less than operator for sorting by priority."""
         return self.priority < other.priority
 
+    def is_completed (self):
+        """Check if the project is completed."""
+        return self.completion_percentage == 100
+
     def update(self, new_completion_percentage = None, new_priority = None):
         if new_completion_percentage is not None:
             self.completion_percentage = int(new_completion_percentage)
