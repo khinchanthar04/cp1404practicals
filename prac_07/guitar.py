@@ -18,5 +18,6 @@ class Guitar:
 
 
     def __lt__(self, other):
+        """Define less than operator for sorting by year."""
         return self.year < other.year
 
