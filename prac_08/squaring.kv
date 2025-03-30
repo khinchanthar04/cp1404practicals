@@ -1,0 +1,19 @@
+BoxLayout:
+    orientation: 'vertical'  # Changed orientation to left-to-right
+
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_number
+            text: '7'
+            font_size: 48
+            multiline: False
+        Button:
+            text: 'Square'
+            on_press: app.handle_calculate(input_number.text)
+        Label:
+            id: output_label
+            font_size: 48
+            color: (1, 0.6, 0.6, 1)  # Changed color to pink
+    Label:
+        text: 'Enter a number and press "Square"'  # Added label at the bottom
