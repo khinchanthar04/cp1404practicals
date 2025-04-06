@@ -9,7 +9,7 @@ from prac_09.taxi import Taxi
 class SilverServiceTaxi(Taxi):
     """Specialised version of a Taxi with higher pricing and flagfall."""
 
-    flagfall = 4.50
+    flagfall = 4.5
 
     def __init__(self, name, fuel, fanciness):
         """Initialised a SilverServiceTaxi instance."""
@@ -19,7 +19,7 @@ class SilverServiceTaxi(Taxi):
 
     def __str__(self):
         """Return a string representation of a SilverServiceTaxi."""
-        return f"{super().__str__()} plus flagfall of ${self.flagfall:2sf}"
+        return f"{super().__str__()} plus flagfall of ${self.flagfall:.2f}"
 
     def get_fare(self):
         """Get the current fare."""
