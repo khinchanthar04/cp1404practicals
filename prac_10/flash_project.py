@@ -18,5 +18,12 @@ def convert_celsius_to_fahrenheit(celsius=0):
     fahrenheit = float(celsius)*9.0/5 +32
     return f"Initial Celsius value: {celsius} - Fahrenheit value: {fahrenheit:.2f}"
 
+@app.route('/c')
+@app.route('/c/<fahrenheit>')
+def convert_fahrenheit_to_celsius(fahrenheit=0):
+    celsius = float(fahrenheit)*9.0/5 +32
+    return f"Initial Fahrenheit value: {fahrenheit} - Celsius value: {celsius:.2f}"
+
+
 if __name__ == '__main__':
     app.run()
