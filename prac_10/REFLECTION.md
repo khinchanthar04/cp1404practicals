@@ -35,19 +35,22 @@ For each one, write a short explanation of what was good about your review.
 
 ### Good Code Review 1
 
-[]()
-
+[Prac06-Code Review](https://github.com/NaingPhonePyae/cp1404practicals/pull/2)
+Consider adding error handling for potential ValueError exceptions when convertign input to int
 ### Explanation
 
-...
+This review is good because it identifies a potential error that could crash the program if it's not handled properly. By suggesting error handling, it helps improve the user experience. The feedback is constructive and directly improves the quality of the code without being very critical. 
 
 ### Good Code Review 2
 
-[]()
+[Prac 9](https://github.com/mariiakostina/cp1404practicals/pull/5/files)
+Add constants for easier tweaking for your code
+
+
 
 ### Explanation
 
-...
+This review is good because it identifies a potential runtime error that could crash the program if not handled properly. By suggesting the addition of error handling, it helps improve the program's robustness and user experience. The feedback is constructive and directly improves the quality of the code without being overly critical.
 
 ## Practicals
 
