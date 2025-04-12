@@ -9,8 +9,7 @@ from prac_06.car import Car
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    return " ".join([s] *n)
-
+    return " ".join([s]*n)
 
 
 def is_long_word(word, length=5):
@@ -47,7 +46,7 @@ def run_tests():
     # using the value passed in or the default
     # You should test both of these
     car = Car(fuel=10)
-    assert car.fuel > 0
+    assert car.fuel>0
 
     car = Car()
     assert car.fuel == 0
@@ -71,3 +70,14 @@ doctest.testmod()
 # and one more that you decide is a useful test.
 # Run your doctests and watch the tests fail.
 # Then write the body of the function so that the tests pass.
+
+def format_phrase_to_sentence(phrase):
+    """Format a phrase as a sentence, starting with a capital and ending with a single full stop. """
+    phrase = phrase.capitalize()
+    if not phrase.endswith("."):
+        phrase += "."
+    return phrase
+
+assert format_phrase_to_sentence("hello") == "Hello."
+assert format_phrase_to_sentence("It is an ex parrot.") == "It is an ex parrot."
+assert format_phrase_to_sentence("a valid phrase") == 'A valid phrase.'
