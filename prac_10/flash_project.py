@@ -16,7 +16,7 @@ def greet(name=""):
 @app.route('/f/<celsius>')
 def convert_celsius_to_fahrenheit(celsius=0):
     fahrenheit = float(celsius)*9.0/5 +32
-    return fahrenheit
+    return f"Initial Celsius value: {celsius} - Fahrenheit value: {fahrenheit:.2f}"
 
 if __name__ == '__main__':
     app.run()
