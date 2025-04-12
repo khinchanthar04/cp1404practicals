@@ -22,7 +22,7 @@ def is_long_word(word, length=5):
     >>> is_long_word("Python", 6)
     True
     """
-    return len(word) > length
+    return len(word) >= length
 
 
 def run_tests():
@@ -70,3 +70,14 @@ doctest.testmod()
 # and one more that you decide is a useful test.
 # Run your doctests and watch the tests fail.
 # Then write the body of the function so that the tests pass.
+
+def format_phrase_to_sentence(phrase):
+    """Format a phrase as a sentence, starting with a capital and ending with a single full stop. """
+    phrase = phrase.capitalize()
+    if not phrase.endswith("."):
+        phrase += "."
+    return phrase
+
+assert format_phrase_to_sentence("hello") == "Hello."
+assert format_phrase_to_sentence("It is an ex parrot.") == "It is an ex parrot."
+assert format_phrase_to_sentence("a valid phrase") == 'A valid phrase.'
